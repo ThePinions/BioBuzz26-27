@@ -29,6 +29,8 @@ public class TeleOp_StarterBot extends OpMode {
         leftIntakeWheel = hardwareMap.get(CRServo.class,"leftIntakeWheel");
 
         velocity = 1350;
+
+        shooter.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
     }
 
     @Override
